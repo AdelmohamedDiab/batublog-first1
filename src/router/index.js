@@ -15,7 +15,11 @@ const router = createRouter({
     }
     },
     {
-    name:"home",
+    path: '/',
+    redirect: '/home' // ده بيقول للموقع لو المسار فاضي، روح للـ home
+},
+    {
+    name:"home",  
     path:"/home",
     component:homeviwe,
     meta:{
